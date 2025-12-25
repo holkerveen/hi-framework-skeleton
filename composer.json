@@ -1,0 +1,20 @@
+{
+    "name": "holkerveen/hi-framework-skeleton",
+    "description": "Application skeleton for the Hi Framework",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4",
+        "holkerveen/hi-framework": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "@php -S localhost:8000 -t public"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
