@@ -1,4 +1,4 @@
-# My DIY PHP Framework Application
+# My Hi Framework Application
 
 This is a project built with [Hi Framework](https://github.com/holkerveen/hi-framework).
 
