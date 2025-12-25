@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=8.4",
-        "holkerveen/hi-framework": "^0.1"
+        "holkerveen/hi-framework": "^0.2"
     },
     "autoload": {
         "psr-4": {
