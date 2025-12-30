@@ -1,43 +1,18 @@
-# My Hi Framework Application
+# Hi Framework Skeleton
 
-This is a project built with [Hi Framework](https://github.com/holkerveen/hi-framework).
-
-## Getting Started
-
-### 1. Install Dependencies
-
-```bash
-composer install
-```
-
-### 2. Configure Database
-
-Edit `src/config/doctrine-bootstrap.php` to configure your database connection.
-
-The default is SQLite with the database file at `db.sqlite`.
-
-### 3. Start Development Server
-
-```bash
-composer run serve
-```
-
-Visit [http://localhost:8000](http://localhost:8000)
-
-## Project Structure
-
-```
-.
-├── public/             # Web root (document root)
-│   └── index.php      # Application entry point
-├── src/
-│   ├── Controllers/   # Your controllers
-│   ├── Entity/        # Doctrine entities
-│   └── config/        # Configuration files
-├── templates/         # Twig templates
-└── vendor/            # Composer dependencies
-```
+A project skeleton for [Hi Framework](https://github.com/holkerveen/hi-framework) applications.
 
 ## Documentation
 
-For framework documentation, see the [Hi Framework README](https://github.com/holkerveen/hi-framework).
+For information on using this skeleton to build applications, see the [Hi Framework documentation](https://github.com/holkerveen/hi-framework).
+
+## Developing the Skeleton
+
+This repository serves as a template for new Hi Framework projects. To modify the skeleton:
+
+- Update dependencies in `composer.json`
+- Modify the directory structure and boilerplate files as needed
+- Update `Application.php` in `src/` to extend or customize framework behavior
+- Test changes by creating a new project from the modified skeleton
+
+The skeleton is kept minimal to provide a clean starting point for new applications.
