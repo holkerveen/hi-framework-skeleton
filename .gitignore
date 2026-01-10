@@ -3,3 +3,5 @@ composer.lock
 .env
 db.sqlite
 .DS_Store
+/.idea
+/var
