@@ -1,0 +1,21 @@
+{% extends 'layout-minimal.html.twig' %}
+
+{% block content %}
+    <div class="login-container card">
+        <h1>Login</h1>
+
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block layout %}
+    <header>
+        <h1>{% block header %}Hi Framework{% endblock %}</h1>
+        <nav>
+            <ul class="public-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+
+            {% if app.session.user.id %}
+                <ul class="admin-menu">
+                    <li><a href="/admin/users">Users</a></li>
+                    <li><a href="/admin/blogposts">Edit blog</a></li>
+                </ul>
+            {% endif %}
+
+            <ul class="account-menu">
+                {% if app.session.user.id %}
+                    <li><a href="/logout">Logout</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+{% endblock %}
